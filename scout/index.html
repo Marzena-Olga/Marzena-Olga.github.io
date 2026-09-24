@@ -1,69 +1,20 @@
-
-<html>
+<!doctype html>
+<html lang="pl">
 <head>
-<title>Światła Indian Scout</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Moje notatki z adaptacji oświetlenia Indian Scout 2022 w wersji amerykańskiej: wtyczki, przedłużki i schemat podłączenia.">
+  <meta name="theme-color" content="#191c19">
+  <title>Światła Indian Scout 2022 · Garaż Marzeny</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<center>
-  <h1>Światła Indian Scout</h1>  
-</center>
-
-
-    <table border="5" bordercolor="red" align="center">
-        <tr>
-            <th colspan="1">Instrukcja zaadaptowania amerykańskiego Scouta 2022 na Europe</th> 
-        </tr>
-        <tr>
-            <td><p>W instalacji powinny być europejskie wtyczki 4-pin i 8-pin zaślepione zatyczkami</p></td>
-        </tr>
-        <tr>   
-            <td><img src="./images/pic1.jpg" alt="" /></td>
-        </tr>
-        <tr>
-            <td><p>Tu bez zaślepek - we wtyczce 8-pinowej wykorzystanych jest tylko 6 pinów  </p></td>
-        </tr>
-        <tr>
-            <td><img src="./images/pic2.jpg" alt="" /></td>
-        </tr>
-        <tr>
-            <td><p>Żeby nie ciąć oryginalnej instalacji posłużyłam się przedłużkami z Aliexpress</p></td>
-        </tr>
-        <tr>
-            <td><p>Potrzebne są przedłużki: 8-pin, 4-pin i 2x2-pin</p></td>
-        </tr>
-        <tr>
-            <td><img src="./images/pic4.jpg" alt="" /></td>
-        </tr>
-        <tr>
-            <td><p>Tu jest fragment schematu, lewa wtyczka ma taki sam rozkład pinów jak prawa plus dwa piny (5 i 8) na oświetlenie tablicy</p></td>
-        </tr>
-        <tr>
-            <td><p>1-pin: pozycja (+12V), 2-pin: hamulce sterowany plusem, 3-pin: masa, 4-pin kierunkowskaz sterowany masą </p></td>
-        </tr>
-        <tr>
-            <td><img src="./images/pic5.jpg" alt="" /></td>
-        </tr>
-        <tr>
-            <td><p>Schemat: </p></td>
-        </tr>
-        <tr>
-            <td><p>Za pomocą przedłużek 2-pinowych wziełam sygnał od przednich kierunkowskazów do sterowania tylnymi kierunkowskazami.</p></td>
-        </tr>
-        <tr>
-            <td><p> 4-pin od tylnych kierunkowskazów (od strony ECU) jest obciążony rezystorami 470 ohm do plusa (do pinu 1) aby przerywacz nie sygnalizował awarii żarówki.</p></td>
-        </tr>
-        <tr>
-            <td><p>Dlaczego tak? Bo w amerykańskiej wersji Scouta przy hamowaniu oprócz stopu zapalają się kierunkowskazy i diagnosta mógłby robić problem.</p></td>
-        </tr>
-        <tr>
-            <td><p>Także tylne kierunkowskazy są sterowane przez przednie żeby nie zapalały się przy hamowaniu.</p></td>
-        </tr>
-        <tr>
-            <td><img src="./images/pic6.jpg" alt="" /></td>
-        </tr>
-        <tr>
-            <td><p>Lepszym rozwiązaniem byłoby przeflashowanie komputera na wersje EU ale brak czasu....</p></td>
-        </tr>
-   </table>
+<a class="skip" href="#instrukcja">Przejdź do instrukcji</a>
+<header class="topbar"><a href="../">GARAŻ MARZENY<span>Notatki z warsztatu</span></a><span class="edition">INDIAN / 2022</span></header>
+<main>
+  <div class="hero"><p class="eyebrow">MOTOCYKLE · ELEKTRYKA</p><h1>Indian Scout.<br><em>Światła po europejsku.</em></h1><p class="intro">Moje notatki z adaptacji oświetlenia amerykańskiego Scouta 2022 na Europę — od fabrycznych wtyczek po podłączenie kierunkowskazów.</p><div class="tags"><span>Scout 2022</span><span>USA → EU</span><span>Bez cięcia instalacji</span></div></div>
+  <div class="layout"><nav aria-label="Spis treści"><p class="eyebrow">W TEJ INSTRUKCJI</p><a href="#etap-1"><span>01</span>Wtyczki w fabrycznej instalacji</a><a href="#etap-2"><span>02</span>Przedłużki zamiast cięcia przewodów</a><a href="#etap-3"><span>03</span>Rozkład pinów</a><a href="#etap-4"><span>04</span>Podłączenie kierunkowskazów</a></nav><article id="instrukcja"><section id="etap-1"><div class="section-heading"><span class="number">01</span><h2>Wtyczki w fabrycznej instalacji</h2></div><p>W instalacji powinny znajdować się europejskie wtyczki 4-pin i 8-pin, zamknięte zaślepkami.</p><figure><a href="images/pic1.jpg" target="_blank" rel="noopener"><img src="images/pic1.jpg" alt="Wtyczki z zaślepkami" loading="lazy"></a><figcaption>Wtyczki z zaślepkami · Kliknij zdjęcie, aby powiększyć.</figcaption></figure><p>Po zdjęciu zaślepek: we wtyczce 8-pinowej wykorzystanych jest tylko 6 pinów.</p><figure><a href="images/pic2.jpg" target="_blank" rel="noopener"><img src="images/pic2.jpg" alt="Wtyczki po zdjęciu zaślepek" loading="lazy"></a><figcaption>Wtyczki po zdjęciu zaślepek · Kliknij zdjęcie, aby powiększyć.</figcaption></figure></section><section id="etap-2"><div class="section-heading"><span class="number">02</span><h2>Przedłużki zamiast cięcia przewodów</h2></div><p>Żeby nie ciąć oryginalnej instalacji, posłużyłam się przedłużkami z AliExpress. Potrzebne są: jedna przedłużka 8-pin, jedna 4-pin oraz dwie 2-pin.</p><figure><a href="images/pic4.jpg" target="_blank" rel="noopener"><img src="images/pic4.jpg" alt="Przedłużki wykorzystane do adaptacji" loading="lazy"></a><figcaption>Przedłużki wykorzystane do adaptacji · Kliknij zdjęcie, aby powiększyć.</figcaption></figure></section><section id="etap-3"><div class="section-heading"><span class="number">03</span><h2>Rozkład pinów</h2></div><p>Na poniższym fragmencie schematu lewa wtyczka ma taki sam rozkład pinów jak prawa, a dodatkowo dwa piny (5 i 8) przeznaczone do oświetlenia tablicy rejestracyjnej.</p><div class="table-wrap"><table><caption>Rozkład pinów według moich notatek</caption><thead><tr><th>Pin</th><th>Funkcja</th></tr></thead><tbody><tr><td>1</td><td>Światło pozycyjne (+12 V)</td></tr><tr><td>2</td><td>Światło hamowania — sterowanie plusem</td></tr><tr><td>3</td><td>Masa</td></tr><tr><td>4</td><td>Kierunkowskaz — sterowanie masą</td></tr></tbody></table></div><figure><a href="images/pic5.jpg" target="_blank" rel="noopener"><img src="images/pic5.jpg" alt="Fragment schematu instalacji" loading="lazy"></a><figcaption>Fragment schematu instalacji · Kliknij zdjęcie, aby powiększyć.</figcaption></figure></section><section id="etap-4"><div class="section-heading"><span class="number">04</span><h2>Podłączenie kierunkowskazów</h2></div><p>Za pomocą przedłużek 2-pinowych pobrałam sygnał z przednich kierunkowskazów do sterowania tylnymi.</p><p>Pin 4 tylnych kierunkowskazów od strony ECU jest obciążony rezystorami 470 Ω podłączonymi do plusa (pinu 1), aby przerywacz nie sygnalizował awarii żarówki.</p><aside><strong>Dlaczego takie podłączenie?</strong><p>W amerykańskiej wersji Scouta podczas hamowania oprócz światła stop zapalają się kierunkowskazy, co mogłoby stanowić problem podczas badania technicznego. Tylne kierunkowskazy są więc sterowane sygnałem z przednich, żeby nie zapalały się przy hamowaniu.</p></aside><figure><a href="images/pic6.jpg" target="_blank" rel="noopener"><img src="images/pic6.jpg" alt="Schemat podłączenia" loading="lazy"></a><figcaption>Schemat podłączenia · Kliknij zdjęcie, aby powiększyć.</figcaption></figure></section><section class="closing"><p class="eyebrow">NA KONIEC</p><h2>A może wersja EU?</h2><p>Lepszym rozwiązaniem byłoby przeprogramowanie komputera na wersję europejską, ale zabrakło mi czasu…</p></section></article></div>
+</main>
+<footer><span>Garaż Marzeny · Indian Scout</span><a href="#">Wróć na górę ↑</a></footer>
 </body>
 </html>
