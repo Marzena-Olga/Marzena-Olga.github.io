@@ -2,71 +2,84 @@
 
 # Marzena Kupniewska
 
-**DevOps / SRE · Kubernetes · Infrastructure as Code · GitOps**
+**DevOps & Platform Engineering · Kubernetes · Infrastructure as Code · GitOps**
 
-Od maszyn wirtualnych do deklaratywnie zarządzanej platformy Kubernetes.
+From virtual machines to declaratively managed Kubernetes platforms.
 
-[Profil GitHub](https://github.com/Marzena-Olga) · [Projekty](#wybrane-projekty) · [Po godzinach](#po-godzinach)
+[GitHub](https://github.com/Marzena-Olga) · [Selected projects](#selected-projects) · [Beyond infrastructure](#beyond-infrastructure)
 
 </div>
 
 ---
 
-## O mnie
+## About me
 
-Zajmuję się budową i utrzymaniem platform Kubernetes on-premises oraz automatyzacją infrastruktury i wdrożeń. Łączę Terraform, Ansible, Helm, Argo CD i GitLab CI/CD, aby zarządzać środowiskami DEV, STAGE i PROD w powtarzalny sposób.
+I build and operate on-premises Kubernetes platforms and automate infrastructure and application delivery. My work connects Linux administration, virtualization, networking, storage, and GitOps across development, staging, and production environments.
 
-Najbliższe są mi praktyczne zadania: przygotowanie infrastruktury, uruchomienie usług platformowych, zarządzanie sekretami, monitoring i niezawodność środowisk.
+I use Terraform, Ansible, Helm, Argo CD, and GitLab CI/CD to make infrastructure and deployments repeatable. I work across the platform lifecycle: provisioning virtual machines, configuring clusters, integrating platform services, troubleshooting failures, and planning migrations and upgrades.
 
-## Wybrane projekty
+I also lead two development teams and share practical Kubernetes knowledge through internal workshops and documentation.
 
-### 01 · Infrastruktura jako kod
+## Selected projects
+
+### Infrastructure as Code
 
 **[terraform-iac](https://github.com/Marzena-Olga/terraform-iac)**
 
-Automatyzacja przygotowania maszyn wirtualnych pod Kubernetes na Proxmox: tworzenie VM z szablonów, konfiguracja CPU, pamięci, dysków i sieci oraz kont użytkowników z kluczami SSH. Konfiguracja obejmuje również pobieranie tokena Proxmox z Passbolt.
+Provisioning virtual machines for Kubernetes on Proxmox, including CPU, memory, disks, networking, and SSH access. The configuration also covers retrieving the Proxmox token from Passbolt.
 
-`Terraform` · `Proxmox` · `Kubernetes` · `Passbolt`
+`Terraform` · `Proxmox` · `Linux` · `Passbolt`
 
-### 02 · Platforma zarządzana przez GitOps
+### GitOps platform bootstrap
 
 **[argocd-bootstrap](https://github.com/Marzena-Olga/argocd-bootstrap)**
 
-Konfiguracja startowa platformy Kubernetes. Po inicjalizacji przez Ansible zarządzanie przejmuje Argo CD, wykorzystując root Application i ApplicationSets. Repozytorium obejmuje między innymi monitoring, storage, operatory baz danych, certyfikaty oraz usługi platformowe.
+A Kubernetes platform bootstrap configuration in which Ansible performs the initial setup and Argo CD takes over ongoing management through a root Application and ApplicationSets. It brings monitoring, storage, database operators, certificates, and platform services into a declarative workflow.
 
 `Argo CD` · `ApplicationSet` · `Ansible` · `Kubernetes` · `GitOps`
 
-### 03 · ThingsBoard na Kubernetes
+### ThingsBoard on Kubernetes
 
 **[thingsboard-ce](https://github.com/Marzena-Olga/thingsboard-ce)**
 
-Chart Helm do wdrażania ThingsBoard Community Edition w modelu GitOps. Integruje aplikację z istniejącymi usługami PostgreSQL, Cassandra, Redis i Kafka, sekretami z Passbolt przez External Secrets Operator, Gateway API oraz monitoringiem Prometheus.
+A Helm chart for deploying ThingsBoard Community Edition through GitOps. It integrates with existing PostgreSQL, Cassandra, Redis, and Kafka services, secrets delivered from Passbolt through External Secrets Operator, Gateway API routing, and Prometheus monitoring.
 
-`Helm` · `ThingsBoard CE` · `External Secrets` · `Gateway API` · `Prometheus`
+`Helm` · `ThingsBoard CE` · `External Secrets Operator` · `Gateway API` · `Prometheus`
 
-### 04 · Konfiguracja wdrożeń dla wielu środowisk
+### Application delivery across environments
 
 **[applicationset-generator](https://github.com/Marzena-Olga/applicationset-generator)**
 
-Projekt związany z generowaniem ApplicationSets i organizacją wdrożeń aplikacji dla DEV, STAGE i PROD. Dokumentacja opisuje wspólne wartości chartu Helm oraz osobne nadpisania dla środowisk, dzięki którym nie trzeba powielać całej konfiguracji aplikacji.
+ApplicationSet generation and deployment configuration for development, staging, and production. Shared Helm values and environment-specific overrides help keep application configuration consistent without duplicating entire charts.
 
-`Argo CD` · `ApplicationSet` · `Helm` · `DEV / STAGE / PROD`
+`Argo CD` · `ApplicationSet` · `Helm` · `GitOps`
 
-## Obszary pracy
+## Hands-on experience
 
-| Obszar | Technologie |
+| Area | Technologies and practical work |
 | --- | --- |
-| Infrastruktura i automatyzacja | Proxmox, Terraform, Ansible, Linux |
-| Platforma i wdrożenia | Kubernetes, Helm, Argo CD, GitLab CI/CD |
-| Dane i storage | PostgreSQL / CloudNativePG, Kafka / Strimzi, Cassandra, Redis, Rook / Ceph |
-| Sekrety i obserwowalność | Passbolt, External Secrets Operator, Prometheus, Grafana |
+| Infrastructure and automation | Debian / Linux, Proxmox, VMware, Terraform, Ansible |
+| Kubernetes and delivery | kubeadm, containerd, Helm, Argo CD, ApplicationSets, GitLab CI/CD |
+| Networking and traffic | Cilium, Envoy Gateway, Gateway API, HAProxy, Keepalived |
+| Storage | Ceph, Longhorn, NFS CSI |
+| Databases and messaging | PostgreSQL / CloudNativePG, PgBouncer, Kafka / Strimzi, Cassandra / K8ssandra, Redis / Valkey |
+| Secrets and identity | Passbolt, External Secrets Operator, cert-manager, Keycloak |
+| Observability | Prometheus, Grafana, Alertmanager, Loki, Hubble |
 
-## Po godzinach
+## How I work
 
-Lubię pracę przy motocyklu i dokumentowanie praktycznych rozwiązań. W tym repozytorium znajdziesz także moje notatki z adaptacji oświetlenia Indian Scouta 2022 w wersji amerykańskiej.
+- Keep infrastructure and deployment configuration in version control.
+- Automate repeatable tasks and document operational decisions.
+- Investigate issues across application, cluster, network, and storage layers.
+- Validate upgrades and migrations before applying them to production.
+- Build platform services that help development teams deploy and troubleshoot applications.
 
-**[Przeczytaj instrukcję: Światła Indian Scout](https://Marzena-Olga.github.io/scout/)** · [Kod instrukcji](scout/index.html)
+## Beyond infrastructure
+
+I enjoy working on motorcycles and documenting practical solutions. This repository also includes my notes on adapting the lighting of a US-spec 2022 Indian Scout.
+
+**[Indian Scout lighting guide — in Polish](https://Marzena-Olga.github.io/scout/)** · [Guide source](scout/index.html)
 
 ---
 
-Informacje o strukturze strony, podglądzie lokalnym i edycji znajdziesz w [DEVELOPMENT.md](DEVELOPMENT.md).
+For repository structure, local preview, and editing instructions, see [DEVELOPMENT.md](DEVELOPMENT.md).
